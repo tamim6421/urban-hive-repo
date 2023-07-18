@@ -1,0 +1,265 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.nav_container{
+    /* min-height: 50px; */
+    max-width:1200px;
+    margin:0 auto;
+}
+nav{
+    background-color:rgb(255, 148, 255);
+}
+.logo img{
+    width: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+span{
+    color: rgb(255, 255, 255);
+}
+.menus li{
+    list-style: none;
+}
+.menus a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+.menus{
+    display: flex;
+    gap: 15px;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_container .login {
+    background-color: rgb(255, 96, 96);
+    font-weight: 700;
+    border-radius: 5px;
+   
+}
+.banner_container{
+    max-width:1200px ;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+
+}
+.b_contant{
+    width: 50%;
+}
+.b_contant p{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.b_contant a{
+    font-size: 4rem;
+    padding: 5px;
+}
+.ba_img img{
+    width: 100%;
+}
+.bttn{
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid blueviolet;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+.b_title{
+    font-size: 4rem;
+    background-image: linear-gradient(rgb(255, 148, 255),salmon,rgba(0, 0, 0, 0.867));
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.pro_title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.product{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product_container{
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.p_boxes{
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+.p_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+
+}
+.p_boxes img{
+    width: 100%;
+}
+.p_boxes h6{
+    font-size: 1rem;
+}
+.box_contant{
+padding: 10px;
+}
+.discount{
+    margin: 0 auto;
+    background-color: blueviolet;
+
+}
+.discount_container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin:0 auto;
+    gap: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.dis_img{
+    width: 50%;
+    position: relative;
+}
+.dis{
+    background-color: rgb(244, 240, 8);
+    color:black;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:10%;
+    right: 15%;
+
+}
+.dis_img img{
+    width: 90%;
+    margin: auto;
+}
+.customer{
+    
+}
+.costomar_container{
+    min-height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.single_boxes{
+    background-color: rgb(183, 106, 255);
+    flex-basis: 290px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.ditels img{
+    width: 80px;
+    height: 80px;
+}
+.ditels{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+
+@media screen and (max-width:576px){
+    .nav_container, .menus{
+        flex-direction: column;
+    }
+    .menus{
+        margin-bottom: 20px;  
+    }
+    .banner_container{
+        flex-direction: column-reverse;
+    }
+    .b_contant{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .b_title{
+        font-size: 3rem;
+    }
+    .b_contant p{
+        font-size: 2rem;
+    }
+    .product_container {
+        grid-template-columns: 1fr;
+    }
+    .discount_container{
+        flex-direction: column;
+    }
+    .dis_img{
+        width: 95%;
+        margin:0 auto;
+    }
+    .dis_contant{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:990px){
+    .banner_container{
+        flex-direction: column-reverse;
+    }
+    .b_contant{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .product_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .discount_container{
+        flex-direction: column;
+    }
+    .dis_img{
+        width: 95%;
+        margin:0 auto;
+    }
+    .dis_contant{
+        text-align: center;
+    }
+
+}
